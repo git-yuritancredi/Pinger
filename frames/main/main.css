@@ -1,0 +1,115 @@
+.sites_list{
+    overflow-y: scroll;
+    max-height: 410px;
+}
+.sites_list.hidden{
+    display: none;
+}
+*::-webkit-scrollbar {
+    width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+    background: none;
+    display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: none;
+    transition: all 0.5s ease-in-out;
+}
+.sites_list:hover::-webkit-scrollbar-thumb{
+    background: #2a454c;
+}
+.sites_list ul li{
+    text-align: left;
+    padding-left: 10px;
+    border-bottom: 1px solid #CCC;
+}
+.sites_list ul li:before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 8px;
+    height: 8px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+.sites_list ul li.success:before{
+    background-color: #008800;
+}
+.sites_list ul li.error:before{
+    background-color: #c64521;
+}
+.sites_list ul li.undefinited:before{
+    background-color: #FFA500;
+}
+.sites_list .actions{
+    float: right;
+    display: block;
+    padding-right: 10px;
+}
+.sites_list .actions span{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+.sites_list .actions span:hover{
+    opacity: 0.2;
+}
+.sites_list .actions .ping{
+    background: url("../../assets/img/ping.svg")no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.sites_list .actions .edit{
+    background: url("../../assets/img/edit.svg")no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.sites_list .actions .copy{
+    background: url("../../assets/img/copy.svg")no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.sites_list .actions .delete{
+    background: url("../../assets/img/delete.svg")no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.search_bar{
+    background-color: #e8eef7;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+}
+.search_bar input{
+    width: 100%;
+    height: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #e3e3e3;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px -4px rgba(87,87,87,1);
+}
+#no_connection{
+    padding-top: 80px;
+}
+#no_connection.hidden{
+    display: none;
+}
+#no_connection img{
+    max-width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+#no_connection p{
+    text-align: center;
+}

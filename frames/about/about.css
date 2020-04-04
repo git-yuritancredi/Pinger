@@ -1,0 +1,30 @@
+html.about{
+    background: -moz-radial-gradient(center, ellipse cover, #2f8e73 0%, #375a64 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #2f8e73 0%,#375a64 100%);
+    background: radial-gradient(ellipse at center, #2f8e73 0%,#375a64 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f8e73', endColorstr='#375a64',GradientType=1);
+    -webkit-app-region: no-drag;
+}
+#about{
+    text-align: center;
+    position: relative;
+    z-index: 9;
+    padding: 20px;
+}
+#about .logo{
+    max-width: 100px;
+    margin-top: 20px;
+}
+#about p{
+    font-size: 12px;
+    margin: 0;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+#about p a{
+    color: #000;
+    text-decoration: underline;
+}
+#about p sup{
+    font-size: 12px;
+}
