@@ -20,7 +20,7 @@
   "author": "Yuri Tancredi",
   "license": "GNU GPL v3",
   "devDependencies": {
-    "electron": "^2.0.11",
+    "electron": "^9.1.0",
     "electron-packager": "^14.2.1",
     "electron-reload": "^1.5.0"
   },
