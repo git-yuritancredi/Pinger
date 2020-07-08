@@ -24,7 +24,9 @@ ipcMain.on('showAddWindow', (event, arg) => {
         frame: false,
         hasShadow: true,
         title: "Pinger | Aggiungi sito",
-        resizable: false
+        webPreferences: {
+            nodeIntegration: true
+        }
     });
     addSiteWindow.loadFile('frames/add/add.html');
     addSiteWindow.once('ready-to-show', () => {
@@ -94,7 +96,9 @@ ipcMain.on('showSettingWindow', (event, arg) => {
         frame: false,
         hasShadow: true,
         title: "Pinger | Impostazioni",
-        resizable: false
+        webPreferences: {
+            nodeIntegration: true
+        }
     });
     settingWindow.loadFile('frames/settings/settings.html');
     settingWindow.once('ready-to-show', () => {
@@ -119,7 +123,10 @@ ipcMain.on('showCronjobWindow', (event, arg) => {
         resizable: false,
         frame: false,
         hasShadow: true,
-        title: "Pinger | Cron"
+        title: "Pinger | Cron",
+        webPreferences: {
+            nodeIntegration: true
+        }
     });
     cronWindow.loadFile('frames/cron/cron.html');
     cronWindow.once('ready-to-show', () => {
@@ -199,7 +206,10 @@ ipcMain.on("pingSite", (event, arg) => {
         resizable: true,
         frame: false,
         hasShadow: true,
-        title: "Pinger | Ping Test"
+        title: "Pinger | Ping Test",
+        webPreferences: {
+            nodeIntegration: true
+        }
     });
     pingWindow.loadFile('frames/ping/ping.html');
     pingWindow.once('ready-to-show', () => {
