@@ -252,8 +252,8 @@ app.on('ready', (event, arg) => {
             ]
         }
     ];
-    /*const menu = Menu.buildFromTemplate(menuTemplate);
-    Menu.setApplicationMenu(menu);*/
+    const menu = Menu.buildFromTemplate(menuTemplate);
+    Menu.setApplicationMenu(menu);
 
     /*tray = new Tray(__dirname+'/assets/img/tray_logo.png');
     const contextMenu = Menu.buildFromTemplate([
