@@ -1,5 +1,10 @@
 # ![Logo](./assets/img/logo.png) Pinger
 
+### :warning: Alert
+#### This repository is no longer mantained
+
+---
+
 **Check if your systems are reachable.**
 
 Pinger make a simple ICMP request that check if your systems are reachable or not and notify you only at first time that your sistem is offline or online.
